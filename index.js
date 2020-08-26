@@ -21,8 +21,8 @@ function grab() {
                 var url2 = "https://www.slideshare.net" + randomSlide.attribs.href;
                 got(url2).then(function(response) {
                     var $ = cheerio.load(response.body);
-                    var max = parseInt($("#total-slides")[0].children[0].data) - 1;
-                    var rs = Math.floor(Math.random() * max);
+                    var max = parseInt($("#total-slides")[0].children[0].data);
+                    var rs = Math.floor(Math.random() * max) + 1;
                     var imgsrc = $(".slide_image")[0].attribs.src;
                     var final = imgsrc.replace("-1-", "-" + rs + "-");
                     var title = $(".j-title-breadcrumb").text();
