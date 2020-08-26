@@ -1,0 +1,28 @@
+{
+  "name": "random-slide",
+  "version": "1.0.0",
+  "description": "pulls random slides from slideshare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0rmancodes/random-slide.git"
+  },
+  "keywords": [
+    "slideshare",
+    "powerpoint",
+    "slide"
+  ],
+  "author": "n0rmancodes",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/n0rmancodes/random-slide/issues"
+  },
+  "homepage": "https://github.com/n0rmancodes/random-slide#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "got": "^11.5.2"
+  }
+}
